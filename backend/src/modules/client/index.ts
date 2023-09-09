@@ -1,0 +1,1 @@
+export { default } from "./infrastructure/route/client.route"

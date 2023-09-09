@@ -1,0 +1,21 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend": "cd ./backend & yarn dev",
+    "frontend": "cd ./frontend & yarn start",
+    "dev": "concurrently \"node index.js\" \"yarn backend\" \"yarn frontend\"",
+    "postinstall": "cd backend & yarn & cd ./ & yarn & cd ./",
+    "export-common": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "copyfiles": "^2.4.1",
+    "node-watch-changes": "^2.0.3"
+  }
+}
